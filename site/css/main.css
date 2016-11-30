@@ -1,0 +1,83 @@
+/* Simple Responsive Framework. */
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+.row{
+  width: 100%;
+
+}
+h1{
+  text-align: center;
+  margin: 20px;
+}
+div#container1,div#container2,div#container3{
+  align-self:   center;
+  position: relative;
+  margin:1%;
+  overflow: auto;
+  height: 150px;
+  background-color: gray;
+
+}
+
+.p1{
+  font-style: italic;
+  padding: 5px;
+  border: 1px solid black;
+  border-top: hidden;
+  border-right: hidden;
+  position: absolute;
+  right: 0px;
+  top:  0px;
+}
+#Ch{
+  background-color: pink;
+}
+#Su{
+  background-color: rgb(233,261,124);
+}
+#Be{
+  background-color: rgb(175, 65, 41);
+}
+.p2{
+  font-family:Helvetica,sans-serif;
+  /*font-style: oblique;*/
+  padding: 5px;
+  position: relative;
+  top:30px;
+
+}
+/********** Large devices only **********/
+@media (min-width: 992px) {
+   .col-lg-4 {
+    float: left;
+    border: 1px solid black;
+    margin-left: 10px;
+    text-align:  center;
+  }
+
+  .col-lg-4 {
+    width: 31%;
+
+  }
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+.col-md-6,  .col-md-12 {
+    float: left;
+    border: 1px solid black;
+  }
+
+  .col-md-6 {
+    width: 48%;
+  }
+
+  .col-md-12 {
+
+    width: 98%;
+  }
+}
