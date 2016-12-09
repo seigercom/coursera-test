@@ -1,7 +1,7 @@
 #company-name{
   font-style: normal;
   font-size: 1.8em;
-  margin-left: 10px;
+  margin-left: 5px;
   color: black;
   margin-top: 0px;
 }
@@ -29,4 +29,7 @@ section  p{
 }
 #collapsable-nav > #nav-list{
   background-color: white;
+}
+.container{
+  margin-left: 0px;
 }
