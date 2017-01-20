@@ -1,0 +1,15 @@
+<ol class="breadcrumb">
+  <li><a href="#">Home</a></li>
+  <li class="active">Categories list</li>
+</ol>
+<div>
+  <table class="table table-striped">
+    <tr class='info'>
+      <th>name</th>
+      <th>shortname</th>
+    </tr>
+<tr ng-repeat='category in cate.categories'>
+  <td>{{category.name}}</td>
+  <td><a ui-sref='items({categoryId:category.short_name})'>{{category.short_name}}</a></td>
+  </table>
+</div>
