@@ -1,0 +1,25 @@
+<div class="container">
+    <h3 ng-if="!$ctrl.info">You have not signed up yet, please <a ui-sref="public.sign" >SIGN UP NOW!</a></h2>
+ <div ng-if="$ctrl.info">
+  <ul>
+    <li>
+      First name: {{$ctrl.info.firstname}}
+    </li>
+    <li>
+      Last name: {{$ctrl.info.lastname}}
+    </li>
+    <li>
+      Email address: {{$ctrl.info.email}}
+    </li>
+    <li>
+      Phone number: {{$ctrl.info.phone}}
+    </li>
+    <li>
+      Favorite menu: {{$ctrl.info.menu}}  
+    </li>
+  </ul>
+  <menu-item
+       menu-item="$ctrl.menuItem">
+  </menu-item>
+ </div>
+</div>
